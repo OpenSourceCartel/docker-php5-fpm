@@ -30,4 +30,5 @@ echo "security.limit_extensions = .php" >> /etc/php5/fpm/pool.d/www.conf
 # Port to expose (default: 9000)
 EXPOSE 9000
 
+# Set supervisord entrypoint
 CMD ["/usr/bin/supervisord"]
