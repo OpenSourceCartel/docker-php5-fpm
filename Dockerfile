@@ -31,4 +31,4 @@ echo "security.limit_extensions = .php" >> /etc/php5/fpm/pool.d/www.conf
 EXPOSE 9000
 
 # Set supervisord entrypoint
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord", "-n -c /etc/supervisord.conf"]
